@@ -1,0 +1,82 @@
+#:kivy 1.0.9
+#:import MDFlatButton kivymd.uix.button.MDFlatButton
+
+Screen:
+    size: 30, 40
+
+    MDLabel:
+        id: label
+        size_hint: 1, .166
+        align: "right"
+        text: ""
+        pos_hint: {"top": 1}
+
+    BoxLayout:
+        size_hint: 1, .833
+        GridLayout:
+            cols: 4
+            rows: 5
+
+            Button:
+                text: "AC"
+                on_release: app.clear()
+            Button:
+                text: "+/-"
+                on_release: app.toggle_sign()
+            Button:
+                text: "%"
+                on_release: app.calculate_percentage()
+            Button:
+                text: "/"
+                on_release: app.operation_pressed("/")
+                #md_bg_color: 1, 0.5, 0, 1 # orange
+            Button:
+                text: "1"
+                on_release: app.number_pressed(1)
+                #md_bg_color: 0.8, 0.8, 0.8, 1  # light grey
+            Button:
+                text: "2"
+                on_release: app.number_pressed(2)
+            Button:
+                text: "3"
+                on_release: app.number_pressed(3)
+            Button:
+                text: "+"
+                on_release: app.operation_pressed("+")
+            Button:
+                text: "4"
+                on_release: app.number_pressed(4)
+            Button:
+                text: "5"
+                on_release: app.number_pressed(5)
+            Button:
+                text: "6"
+                on_release: app.number_pressed(6)
+            Button:
+                text: "-"
+                on_release: app.operation_pressed("-")
+            Button:
+                text: "7"
+                on_release: app.number_pressed(7)
+            Button:
+                text: "8"
+                on_release: app.number_pressed(8)
+            Button:
+                text: "9"
+                on_release: app.number_pressed(9)
+            Button:
+                text: "*"
+                on_release: app.operation_pressed("*")
+            Button:
+                text: "0"
+                on_release: app.number_pressed(0)
+            Button:
+                text: "."
+                on_release: app.decimal_pressed()
+
+            Button:
+                text: "="
+                on_release: app.evaluate()
+        
+
+
