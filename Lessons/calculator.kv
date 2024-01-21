@@ -1,82 +1,177 @@
 #:kivy 1.0.9
 #:import MDFlatButton kivymd.uix.button.MDFlatButton
-
+#:import MDRectangleFlatButton kivymd.uix.button.MDRectangleFlatButton
 Screen:
     size: 30, 40
 
     MDLabel:
         id: label
         size_hint: 1, .166
-        align: "right"
+        halign: "right"
         text: ""
         pos_hint: {"top": 1}
+        font_size: "20sp"  
+        color: 1, 1, 1, 1  # white
+        md_bg_color: 0.15, 0.15, 0.15, 1  # grey
+
 
     BoxLayout:
+        orientation: "vertical"
         size_hint: 1, .833
-        GridLayout:
-            cols: 4
-            rows: 5
+        md_bg_color: 0.15, 0.15, 0.15, 1  # grey
+        font_size: "20sp"  
 
-            Button:
+        BoxLayout:
+            size_hint: 1, .25
+
+            MDRectangleFlatButton:
                 text: "AC"
                 on_release: app.clear()
-            Button:
+                md_bg_color: 0.2, 0.2, 0.2, 1  # dark grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "+/-"
                 on_release: app.toggle_sign()
-            Button:
+                md_bg_color: 0.2, 0.2, 0.2, 1  # dark grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "%"
                 on_release: app.calculate_percentage()
-            Button:
+                md_bg_color: 0.2, 0.2, 0.2, 1  # dark grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "/"
                 on_release: app.operation_pressed("/")
-                #md_bg_color: 1, 0.5, 0, 1 # orange
-            Button:
+                md_bg_color: 1, 0.5, 0, 1 # orange
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+
+        BoxLayout:
+            size_hint: 1, .25
+
+            MDRectangleFlatButton:
                 text: "1"
                 on_release: app.number_pressed(1)
-                #md_bg_color: 0.8, 0.8, 0.8, 1  # light grey
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "2"
                 on_release: app.number_pressed(2)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "3"
                 on_release: app.number_pressed(3)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "+"
                 on_release: app.operation_pressed("+")
-            Button:
+                md_bg_color: 1, 0.5, 0, 1 # orange
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+
+        BoxLayout:
+            size_hint: 1, .25
+
+            MDRectangleFlatButton:
                 text: "4"
                 on_release: app.number_pressed(4)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "5"
                 on_release: app.number_pressed(5)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "6"
                 on_release: app.number_pressed(6)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "-"
                 on_release: app.operation_pressed("-")
-            Button:
+                md_bg_color: 1, 0.5, 0, 1 # orange
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+
+        BoxLayout:
+            size_hint: 1, .25
+
+            MDRectangleFlatButton:
                 text: "7"
                 on_release: app.number_pressed(7)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "8"
                 on_release: app.number_pressed(8)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "9"
                 on_release: app.number_pressed(9)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "*"
                 on_release: app.operation_pressed("*")
-            Button:
+                md_bg_color: 1, 0.5, 0, 1 # orange
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+
+        BoxLayout:
+            size_hint: 1, .25
+
+            MDRectangleFlatButton:
                 text: "0"
                 on_release: app.number_pressed(0)
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .5, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "."
                 on_release: app.decimal_pressed()
-
-            Button:
+                md_bg_color: 0.5, 0.5, 0.5, 1  # grey
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
+            MDRectangleFlatButton:
                 text: "="
                 on_release: app.evaluate()
-        
+                md_bg_color: 1, 0.5, 0, 1 # orange
+                size_hint: .25, 1
+                text_color: 1, 1, 1, 1  # white
+                font_size: "20sp"
 
 
