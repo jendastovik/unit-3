@@ -29,7 +29,6 @@ Screen:
         GridLayout:
             cols: 4
             rows: 4
-
             TopButton:
                 text: "AC"
                 on_release: app.clear()
@@ -42,11 +41,9 @@ Screen:
             OperationButton:
                 text: "/"
                 on_release: app.operation_pressed("/")
-                #md_bg_color: 1, 0.5, 0, 1 # orange
             NumberButton:
                 text: "1"
                 on_release: app.number_pressed(1)
-                #md_bg_color: 0.8, 0.8, 0.8, 1  # light grey
             NumberButton:
                 text: "2"
                 on_release: app.number_pressed(2)
@@ -85,16 +82,15 @@ Screen:
         NumberButton:
             text: "0"
             on_release: app.number_pressed(0)
-            lsize_hint: 0.5, 1
+            size_hint: 0.5, 1
         NumberButton:
             text: "."
             on_release: app.decimal_pressed()
-            lsize_hint: 0.25, 1
-
+            size_hint: 0.25, 1
         OperationButton:
             text: "="
             on_release: app.evaluate()
-            lsize_hint: 0.25, 1
+            size_hint: 0.25, 1
         
 
 
