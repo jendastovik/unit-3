@@ -16,15 +16,19 @@ Screen:
     MDLabel:
         id: label
         size_hint: 1, .166
-        align: "right"
+        halign: "right"
         text: ""
         pos_hint: {"top": 1}
+        font_size: "20sp"  
+        color: 1, 1, 1, 1  # white
+        md_bg_color: 0.15, 0.15, 0.15, 1  # grey
 
     BoxLayout:
-        size_hint: 1, .833
+        size_hint: 1, .666
+        pos_hint: {"top": 0.833}
         GridLayout:
             cols: 4
-            rows: 5
+            rows: 4
 
             TopButton:
                 text: "AC"
@@ -76,16 +80,21 @@ Screen:
             OperationButton:
                 text: "*"
                 on_release: app.operation_pressed("*")
-            NumberButton:
-                text: "0"
-                on_release: app.number_pressed(0)
-            NumberButton:
-                text: "."
-                on_release: app.decimal_pressed()
+    BoxLayout:
+        size_hint: 1, .166
+        NumberButton:
+            text: "0"
+            on_release: app.number_pressed(0)
+            lsize_hint: 0.5, 1
+        NumberButton:
+            text: "."
+            on_release: app.decimal_pressed()
+            lsize_hint: 0.25, 1
 
-            OperationButton:
-                text: "="
-                on_release: app.evaluate()
+        OperationButton:
+            text: "="
+            on_release: app.evaluate()
+            lsize_hint: 0.25, 1
         
 
 
