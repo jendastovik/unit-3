@@ -1,4 +1,5 @@
 from kivymd.app import MDApp
+from kivy.core.window import Window
 
 class calculator(MDApp):
     def build(self):
@@ -6,6 +7,7 @@ class calculator(MDApp):
         self.num = ""
         self.numbers = []
         self.operations=[]
+        Window.size = (300, 500)
         return
     def number_pressed(self, num):
         if self.res == 0 and self.num == "":

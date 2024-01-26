@@ -1,5 +1,7 @@
 # Jan Stovicek
 
+## Developing for Keeler
+
 ## Why choose me?
 - I have a long experience with programming in C# and Python
 - Experience with working in different parts of the world
