@@ -1,0 +1,118 @@
+#:kivy 1.0.9
+
+Screen:
+    MDBoxLayout:
+        id: one
+        orientation: 'vertical'
+        size_hint: 1, 1
+        md_bg_color: 0.38, 0.38, 0.36, 1
+
+        MDBoxLayout:
+            id: four
+            size_hint: 0.9, 0.125
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            orientation: 'horizontal'
+            MDLabel:
+                size_hint: 0.4, 0.8
+                color: "#766e65"
+                font_size: "30pt"
+                halign: 'center'
+                text: "2048"
+                bold: True
+            MDBoxLayout:
+                size_hint: 0.6, 0.8
+                pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                orientation: 'horizontal'
+                md_bg_color: "blue"
+                padding: dp(10)
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    MDBoxLayout:
+                        orientation: 'horizontal'
+                        MDLabel:
+                            size_hint: .8, 0.8
+                            md_bg_color: "bcac9f"
+                            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+                        MDLabel:
+                            size_hint: .8, 0.8
+                            md_bg_color: "bcac9f"
+                            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                    MDLabel:
+                        
+
+
+
+        MDLabel:
+            size_hint: 0.9, 0.125
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            text: "Join the numbers and get to the 2048 tile!"
+        
+        MDBoxLayout:
+            id: two
+            size_hint: 0.9, 0.75
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            radius: [10, 10, 10, 10]
+
+            MDBoxLayout:
+                size_hint: 0.9, 0.9
+                pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                radius: [10, 10, 10, 10]
+                md_bg_color: 0.30, 0.26, 0.22, 1
+                orientation: 'vertical'
+                padding: dp(10)
+
+                MDBoxLayout:
+                    id: row1
+                    orientation: 'horizontal'
+
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                MDBoxLayout:
+                    id: row2
+                    orientation: 'horizontal'
+
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                    MyButton:
+
+                MDBoxLayout:
+                    id: row3
+                    orientation: 'horizontal'
+
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                MDBoxLayout:
+                    id: row4
+                    orientation: 'horizontal'
+
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                    MyButton:
+                    
+                    
+            
+
+<MyButton>:
+    size_hint: 1, 1
+    padding: dp(10)
+    MDFlatButton:
+        radius: [10, 10, 10, 10]
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        md_bg_color: "#eee4da"
+        font_size: "30pt"
+        halign: 'center'
+        color: "white"
+        on_press: app.button_pressed(self)
+        size_hint: 1, 1
+
+
+
+
+        

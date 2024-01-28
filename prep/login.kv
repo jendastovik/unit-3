@@ -1,0 +1,151 @@
+#:kivy 1.0.9
+
+ScreenManager:
+    LoginScreen:
+        name: "LoginScreen"
+    RegistrationScreen:
+        name: "RegistrationScreen"
+
+<LoginScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color: "#E6F0FF"
+        Image:
+            source: 'Assets/vondracek.jpeg'
+            width: 50
+            allow_stretch: False
+            size_hint_y:.15
+            pos_hint: {"center_x":.5,"center_y":.2}
+        MDLabel:
+            text: 'Vondra'
+            size_hint_y:.25
+            bold: True
+            halign: "center"
+            font_size: "120px"
+            pos_hint: {"center_x":.5,"center_y":.5}
+        MDCard:
+            size_hint: .7,.7
+            pos_hint: {"center_x":.5,"center_y":.5}
+            orientation: "vertical"
+            border_radius: 40
+            radius: [40]
+            MDBoxLayout:
+                orientation: "vertical"
+                pos_hint: {"center_x":.5,"center_y":.5}
+                MDLabel:
+                    text: "Log in to your account"
+                    halign: "left"
+                    text_color: "#F08DA9"
+                    bold: True
+                    size_hint_y:.2
+                    font_size: "50px"
+                    pos_hint: {"center_x":.55, "center_y":.5}
+                MDTextField:
+                    id:uname
+                    icon_left: "email"
+                    hint_text: "Enter username"
+                    size_hint: .7, .15
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                MDTextField:
+                    id: passwd
+                    icon_left: "key-variant"
+                    hint_text: "Enter password"
+                    password: True
+                    size_hint: .7,.15
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                MDLabel:
+                    text: ""
+                    size_hint_y:.15
+                MDFlatButton:
+                    text: "Sign in"
+                    md_bg_color:"#F08DA9"
+                    pos_hint: {"center_x":.5, "center_y":.2}
+                    size_hint: .3,.1
+                    on_press:
+                        root.try_login()
+                MDTextButton:
+                    text: "Don't have an account? Sign up here"
+                    custom_color: "#F08DA9"
+                    size_hint: 1, .25
+                    halign: "center"
+                    pos_hint: {"center_x":0.5,"center_y":.5}
+                    on_press: root.register_btn()
+
+<RegistrationScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color: "#E6F0FF"
+        Image:
+            source: 'Assets/vondracek.jpeg'
+            width: 50
+            allow_stretch: False
+            size_hint_y:.15
+            pos_hint: {"center_x":.5,"center_y":.2}
+        MDLabel:
+            text: 'Vondra'
+            size_hint_y:.15
+            bold: True
+            halign: "center"
+            font_size: "120px"
+            pos_hint: {"center_x":.5,"center_y":.5}
+        MDCard:
+            size_hint: .7,.7
+            pos_hint: {"center_x":.5,"center_y":.5}
+            orientation: "vertical"
+            border_radius: 40
+            radius: [40]
+            MDBoxLayout:
+                orientation: "vertical"
+                pos_hint: {"center_x":.5,"center_y":.5}
+                MDLabel:
+                    text: "Register new account"
+                    halign: "left"
+                    text_color: "#F08DA9"
+                    bold: True
+                    size_hint_y:.15
+                    font_size: "50px"
+                    pos_hint: {"center_x":.55, "center_y":.5}
+                MDTextField:
+                    id:uname
+                    hint_text: "Enter username"
+                    size_hint: .7, .1
+                    hint_font_size: "12px"
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                MDTextField:
+                    id: email
+                    hint_text: "Enter email"
+                    hint_font_size: "10px"
+                    size_hint: .7,.1
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                MDTextField:
+                    id:pass1
+                    hint_text: "Enter password"
+                    size_hint: .7, .1
+                    hint_font_size: "10px"
+                    password: True
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                MDTextField:
+                    id: pass2
+                    hint_text: "Confirm password"
+                    helper_text: "Password must be at least 8 characters long"
+                    helper_text_mode: "on_error"
+                    password: True
+                    size_hint: .7,.1
+                    hint_font_size: "12px"
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                MDLabel:
+                    text: ""
+                    size_hint_y: .05
+                MDFlatButton:
+                    text: "Register"
+                    md_bg_color:"#F08DA9"
+                    pos_hint: {"center_x":.5, "center_y":.2}
+                    size_hint: .3,.05
+                    on_press: root.try_register()
+                MDTextButton:
+                    text: "Already have an account? Log in here"
+                    custom_color: "#F08DA9"
+                    size_hint: 1, .1
+                    halign: "center"
+                    pos_hint: {"center_x":0.5,"center_y":.5}
+                    on_press: root.login_btn()

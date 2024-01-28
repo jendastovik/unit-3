@@ -4,14 +4,14 @@ class my_first_app(MDApp):
     def build(self):
         return
     def pressed(self):
-        label = self.root.ids.my_label
-        button = self.root.ids.my_button
-        label.text = "button pressed"
-        label.color = "red"
-        if button.md_bg_color == [0, 0, 1, 1]:
-            button.md_bg_color = "red"
+        label = self.root.ids.screen
+        text = self.root.ids.my_label
+        if label.md_bg_color == [1, 1, 1, 1]:
+            label.md_bg_color = "black"
+            text.color = "white"
         else:
-            button.md_bg_color = "blue"
+            label.md_bg_color = "white"
+            text.color = "black"
 
 text = my_first_app()
 text.run()

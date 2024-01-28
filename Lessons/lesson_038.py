@@ -22,7 +22,7 @@ class SalemanMap:
         plt.show()
 
 test = SalemanMap()
-test.generate_data(["kobe", "Tokyo", "Osaka", "Nagoya", "Fukuoka", "Sapporo", "Sendai", "Kumamoto", "Naha"])
+test.generate_data(["Kobe", "Tokyo", "Osaka", "Nagoya", "Fukuoka", "Sapporo", "Sendai", "Kumamoto", "Naha"])
 test.get_map()
 
 class Engine:

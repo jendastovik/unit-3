@@ -1,5 +1,5 @@
 import pytest
-from quiz037 import AccountingProgram
+from quiz_37 import AccountingProgram
 
 def test_calculate_interest():
     program = AccountingProgram()
