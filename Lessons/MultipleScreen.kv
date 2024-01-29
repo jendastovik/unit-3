@@ -7,23 +7,34 @@ ScreenManager:
         name:"second"
 
 <firstScreen>:
-    MDLabel:
-        text: 'First Screen'
-        font_style: 'H2'
-        pos_hint: {'center_x': 0.5, 'center_y': 0.8}
-        halign: 'center'
-    MDFlatButton:
-        text: 'Go to second screen'
-        pos_hint: {'center_x': 0.5, 'center_y': 0.4}
-        on_release: root.try_change()
+    MDBoxLayout:
+        orientation: 'vertical'
+        size_hint: 1, 1
+        MDLabel:
+            text: "Jenda's First Screen"
+            font_style: 'H2'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            halign: 'center'
+        MDRaisedButton:
+            text: 'Go to second screen'
+            pos_hint: {'left': 0, 'bottom': 0}
+            md_bg_color: "blue"
+            on_release: root.try_change()
+            
 
 <secondScreen>:
-    MDLabel:
-        text: 'Second Screen'
-        font_style: 'H2'
-        pos_hint: {'center_x': 0.5, 'center_y': 0.8}
-        halign: 'center'
-    MDFlatButton:
-        text: 'Go to first screen'
-        pos_hint: {'center_x': 0.5, 'center_y': 0.4}
-        on_release: root.parent.current = 'first'
+    MDBoxLayout:
+        orientation: 'vertical'
+        size_hint: 1, 1
+        md_bg_color: "black"
+        MDLabel:
+            text: "Jenda's Second Screen"
+            font_style: 'H2'
+            color: "white"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            halign: 'center'
+        MDRaisedButton:
+            text: 'Go to first screen'
+            pos_hint: {'left': 0, 'bottom': 0}
+            md_bg_color: "blue"
+            on_release: root.parent.current = 'first'

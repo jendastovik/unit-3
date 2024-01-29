@@ -1,35 +1,4 @@
-# Quiz 41
-## Python code
-```python
-from kivymd.app import MDApp
-from kivy.core.window import Window
-from kivymd.uix.boxlayout import MDBoxLayout
-
-class tick(MDApp):
-    def build(self):
-        self.turn = 'X'
-        return
-
-    def press(self, btn):
-        if self.turn=='X':
-            btn.text = "X"
-            btn.md_bg_color_disabled= "#D3A98A"
-            btn.disabled = True
-            self.root.ids.turn.text = "It is O's turn!"
-            self.turn = 'O'
-        else:
-            btn.text = "O"
-            btn.md_bg_color_disabled= "#90EE90"
-            btn.disabled = True
-            self.root.ids.turn.text = "It is X's turn!"
-            self.turn = 'X'
-
-test = tick()
-test.run()
-```
-
-```kv
-:kivy 1.0.9
+#:kivy 1.0.9
 
 Screen:
     size: 400,400
@@ -130,8 +99,4 @@ Screen:
                     size_hint:.3,1
                     on_release:
                         app.press(btn9)
-```
 
-## Output
-![](/assets/q41.png)
-### [video](https://drive.google.com/file/d/103HJWmEwkXQWPio_yAcEbEGVWtNFdFNI/view?usp=drive_link)
