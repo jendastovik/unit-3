@@ -30,4 +30,4 @@ test.get_map()
 ```
 
 ## Output
-![](/assets/q38.png)
+![](/Assets/q38.png)

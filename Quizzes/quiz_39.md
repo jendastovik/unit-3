@@ -61,5 +61,5 @@ Screen:
 ```
 
 ## Output
-![](/assets/q39.png)
+![](/Assets/q39.png)
 

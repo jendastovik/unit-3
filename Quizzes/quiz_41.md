@@ -133,5 +133,5 @@ Screen:
 ```
 
 ## Output
-![](/assets/q41.png)
+![](/Assets/q41.png)
 ### [video](https://drive.google.com/file/d/103HJWmEwkXQWPio_yAcEbEGVWtNFdFNI/view?usp=drive_link)

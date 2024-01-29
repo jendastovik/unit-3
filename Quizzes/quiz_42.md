@@ -74,5 +74,5 @@ ScreenManager:
 ```
 
 ## Output
-![](/assets/q42A.png)
-![](/assets/q42B.png)
+![](/Assets/q42A.png)
+![](/Assets/q42B.png)

@@ -66,5 +66,5 @@ ScreenManager:
 ```
 
 ## Output
-![](/assets/q40A.png)
-![](/assets/q40B.png)
+![](/Assets/q40A.png)
+![](/Assets/q40B.png)
