@@ -39,7 +39,7 @@ class AccountingProgram(CompoundInterest):
 ```
 
 ## Output
-![](/assets/q37.png)
+![](/Assets/q37.png)
 
 ## UML diagram
 ![](/UML/q37.png)
