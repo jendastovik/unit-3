@@ -40,3 +40,6 @@ class Classroom:
 ## UML diagram
 ![](/UML/q36.png)
 
+## Output
+![](/Assets/q36.png)
+
