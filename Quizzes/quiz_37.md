@@ -42,3 +42,4 @@ class AccountingProgram(CompoundInterest):
 ![](/assets/q37.png)
 
 ## UML diagram
+![](/UML/q37.png)
