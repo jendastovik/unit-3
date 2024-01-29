@@ -68,3 +68,6 @@ ScreenManager:
 ## Output
 ![](/Assets/q40A.png)
 ![](/Assets/q40B.png)
+
+## UML diagram
+![](/UML/q40.png)

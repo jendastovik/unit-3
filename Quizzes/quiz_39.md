@@ -63,3 +63,6 @@ Screen:
 ## Output
 ![](/Assets/q39.png)
 
+## UML diagram
+![](/UML/q39.png)
+

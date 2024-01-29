@@ -31,3 +31,6 @@ test.get_map()
 
 ## Output
 ![](/Assets/q38.png)
+
+## UML diagram
+![](/UML/q38.png)

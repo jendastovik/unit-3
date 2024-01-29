@@ -135,3 +135,6 @@ Screen:
 ## Output
 ![](/Assets/q41.png)
 ### [video](https://drive.google.com/file/d/103HJWmEwkXQWPio_yAcEbEGVWtNFdFNI/view?usp=drive_link)
+
+## UML diagram
+![](/UML/q41.png)
