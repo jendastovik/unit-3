@@ -38,6 +38,7 @@ class Classroom:
         return sum/len(self.students)
 ```
 ## UML diagram
+![](/UML/q36.png)
 
 ## Output
 ![](/assets/q36.png)
