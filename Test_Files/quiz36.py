@@ -36,9 +36,3 @@ class Classroom:
             sum += student.get_grade()
         return sum/len(self.students)
     
-classroom = Classroom()
-student1 = Student("John", 18, 90)
-student2 = Student("Jane", 19, 80)
-classroom.add_student(student1)
-classroom.add_student(student2)
-print(classroom.get_average_score() == (90 + 80) / 2)
