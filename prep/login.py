@@ -2,6 +2,9 @@ from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
 from kivy.core.window import Window
+from proj_lib import DatabaseWorker
+from kivymd.uix.dialog import MDDialog
+
 
 
 class LoginScreen(MDScreen):
@@ -11,6 +14,19 @@ class LoginScreen(MDScreen):
         uname = self.ids.uname.text
         passwd = self.ids.passwd.text
         print(self.ids.uname.text)
+
+        db = DatabaseWorker("database_test.db")
+        user = db.search("*", f"WHERE username='{uname}' AND password='{passwd}'")
+        db.close()
+        if user:
+            self.parent.current = "HomeScreen"
+        else:
+            self.dialog = MDDialog(
+                text="Invalid username or password",
+                size_hint=(0.7, 0.3),
+            )
+            self.dialog.open()
+
 
     def register_btn(self):
         self.parent.current = "RegistrationScreen"
