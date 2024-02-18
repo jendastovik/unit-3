@@ -21,7 +21,8 @@ for row in res:
     if check:
         total += amount
 
-print(total)
+print(f"total amount of bitcoins transferred for only those transactions that are valid: {total}")
+
 ```
 
 ## Output
