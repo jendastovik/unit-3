@@ -26,4 +26,4 @@ for row in res:
 ```
 
 ## Output
-![](/Assets/qx.png)
+![](/Assets/q47.png)
