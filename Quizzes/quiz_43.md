@@ -14,5 +14,5 @@ WHERE IH.job = 'Herbalist';
 ```
 
 ## Output
-![](/assets/q43A.png)
-![](/assets/q43B.png)
+![](/Assets/q43A.png)
+![](/Assets/q43B.png)

@@ -25,4 +25,4 @@ print(total)
 ```
 
 ## Output
-![](/assets/qx.png)
+![](/Assets/qx.png)

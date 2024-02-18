@@ -18,4 +18,4 @@ print("\n".join([str(r) for r in res]))
 ```
 
 ## Output
-![](/assets/qx.png)
+![](/Assets/qx.png)
