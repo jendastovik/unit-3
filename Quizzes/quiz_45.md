@@ -32,6 +32,6 @@ db.close()
 ```
 
 ## Output
-![](/assets/qx.png)
+![](/assets/q45.png)
 
 

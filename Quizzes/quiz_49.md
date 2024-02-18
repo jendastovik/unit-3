@@ -1,3 +1,6 @@
+# Quiz 49
+## Python code
+```python
 from my_lib import DatabaseWorker
 
 dat = DatabaseWorker("bitcoin_exchange.db")
@@ -11,4 +14,8 @@ dat.run_query("""CREATE TABLE IF NOT EXISTS users(
 query = """SELECT * FROM ledger join users on ledger.sender_id = users.id"""
 query2 = """SELECT * FROM ledger join users on ledger.receiver_id = users.id"""
 res = dat.search(query, multiple=True) + dat.search(query2, multiple=True)
-print(res)
+print("\n".join([str(r) for r in res]))
+```
+
+## Output
+![](/assets/qx.png)

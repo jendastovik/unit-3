@@ -350,4 +350,7 @@ MDScreen:
 
 
 ## Output
-![](/assets/qx.png)
+![](/assets/q46A.png)
+![](/assets/q46B.png)
+![](/assets/q46C.png)
+![](/assets/q46D.png)
