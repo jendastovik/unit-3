@@ -33,5 +33,5 @@ WHERE customer_id = 12 or customer_id = 13 or customer_id = 15 or customer_id = 
 ![](/Assets/q44B.png)
 
 ## ER Diagram
-![](/UML/smallcase.pdf)
+![](/UML/smallcase.png)
 

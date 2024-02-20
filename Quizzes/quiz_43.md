@@ -18,4 +18,4 @@ WHERE IH.job = 'Herbalist';
 ![](/Assets/q43B.png)
 
 ## ER Diagram
-![](/UML/cmoon.pdf)
+![](/UML/cmoon.png)

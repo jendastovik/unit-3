@@ -29,4 +29,4 @@ for row in res:
 ![](/Assets/q47.png)
 
 ## ER Diagram
-![](/UML/bitcoin_exchange.pdf)
+![](/UML/bitcoin_exchange.png)

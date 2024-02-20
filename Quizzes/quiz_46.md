@@ -356,4 +356,4 @@ MDScreen:
 ![](/Assets/q46D.png)
 
 ## ER Diagram
-![](/UML/quiz47.pdf)
+![](/UML/quiz46.png)
