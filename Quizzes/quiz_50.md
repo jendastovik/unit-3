@@ -23,7 +23,7 @@ print(flight2.get_duration())
 ```
 
 ## Output
-![](/assets/q50.png)
+![](/Assets/q50.png)
 
 ## UML Diagram
 ![](/UML/q50.png)
