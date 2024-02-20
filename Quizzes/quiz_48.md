@@ -27,3 +27,6 @@ print(f"total amount of bitcoins transferred for only those transactions that ar
 
 ## Output
 ![](/Assets/q48.png)
+
+## ER Diagram
+![](/UML/bitcoin_exchange.pdf)

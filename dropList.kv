@@ -1,0 +1,18 @@
+#:kivy 1.0.9
+
+MDScreen:
+    size: 500, 700
+
+    MDDropDownItem:
+        id: dropdown_user
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        size_hint: None, None
+        size: 300, 55
+        text: 'select user'
+        on_release: app.open_menu(self)
+
+    MDLabel:
+        id: customer
+        text: ''
+        pos_hint: {'center_x': .5, 'center_y': .2}
+        halign: 'center'

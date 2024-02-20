@@ -27,3 +27,6 @@ for row in res:
 
 ## Output
 ![](/Assets/q47.png)
+
+## ER Diagram
+![](/UML/bitcoin_exchange.pdf)
