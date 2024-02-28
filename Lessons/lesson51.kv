@@ -1,0 +1,45 @@
+#:kivy 1.0.9
+
+ScreenManager:
+    id: screen_manager
+    TableScreen:
+        id: table_screen
+        name: 'TableScreen'
+
+<TableScreen>:
+    MDLabel:
+        text: "Transaction History"
+        font_style: "H4"
+        pos_hint: {'center_x': 0.5, 'top': 0.9}
+        halign: "center"
+        size_hint: (0.8, 0.08)
+
+    MDLabel:
+        text: "New Record"
+        font_style: "H4"
+        pos_hint: {'center_x': 0.5, 'top': 0.3}
+        halign: "center"
+
+    MDBoxLayout:
+        orientation: 'horizontal'
+        size_hint: (.8, .08)
+        pos_hint: {'center_x': 0.5, 'top': 0.2}
+        MDTextField:
+            id: sender
+            hint_text: "Sender"
+            size_hint_x: 0.2
+            filter: "int"
+        MDTextField:
+            id: receiver
+            hint_text: "Receiver"
+            size_hint_x: 0.2
+            filter: "int"
+        MDTextField:
+            id: amount
+            hint_text: "Amount"
+            size_hint_x: 0.2
+            filter: "int"
+        MDRaisedButton:
+            text: "Save"
+            on_release: root.save()
+            
