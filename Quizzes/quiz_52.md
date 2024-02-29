@@ -26,4 +26,4 @@ print(f"{bike.wheel.get_km_per_rotation():.8f} km per rotation")
 ```
 
 ## Output
-![](/assets/q52.png)
+![](/Assets/q52.png)

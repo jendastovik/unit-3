@@ -8,4 +8,4 @@
 ![](/assets/qx.png)
 
 ## B part
-![](/assets/bpart/qx.png)
+![](/Assets/bpart/qx.png)

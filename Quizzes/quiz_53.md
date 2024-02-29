@@ -27,4 +27,4 @@ print(palindrome2.get_pal_list())
 ```
 
 ## Output
-![](/assets/q53.png)
+![](/Assets/q53.png)
