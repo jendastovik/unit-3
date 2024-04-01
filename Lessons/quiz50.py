@@ -32,13 +32,15 @@ flight1 = Flight("ABC123", "New York", "Los Angeles", "08:00", [3, 30, 0], "Boei
 flight2 = Flight("DEF456", "London", "Paris", "12:30", [2, 15, 0], "Airbus A380", 509)
 
 # Print the duration of the first flight
-print(flight1.get_duration())
+print(f"duration of the first flight: {flight1.get_duration()}")
 
 # Print the duration of the second flight
-print(flight2.get_duration())
+print(f"duration of the second flight: {flight2.get_duration()}")
 
 # Print the information
+print("Information about the first flight:")
 print_object_info(flight1)
+print("Information about the first aircraft:")
 print_object_info(aircraft1)
 
 

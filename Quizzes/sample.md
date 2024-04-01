@@ -5,7 +5,7 @@
 ```
 
 ## Output
-![](/assets/qx.png)
+![](/Assets/qx.png)
 
 ## B part
 ![](/Assets/bpart/qx.png)

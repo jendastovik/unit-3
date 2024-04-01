@@ -19,3 +19,7 @@ print(rain.pour(34))
 
 ## Output
 ![](/Assets/q54.png)
+
+## UML Diagram
+![](/Assets/q54_uml.png)
+

@@ -28,3 +28,5 @@ print(palindrome2.get_pal_list())
 
 ## Output
 ![](/Assets/q53.png)
+
+## UML Diagram

@@ -17,13 +17,18 @@ class Bicycle:
         self.wheel = wheel
         self.frame = frame
     def ride(self):
-        return (self.wheel.size, self.frame)
+        print(f"Riding the bike with a {self.frame} frame and a wheel of size {self.wheel.size:.2f} m")
     
 wheel1 = Wheel(26/39.37)
-bike = Bicycle(wheel1, "carbon")
+bike = Bicycle(wheel1, "aluminum")
 
 print(f"{bike.wheel.get_km_per_rotation():.8f} km per rotation")
+print(f"perimeter of the wheel: {bike.wheel.get_perimeter():.8f} m")
+bike.ride()
 ```
 
 ## Output
 ![](/Assets/q52.png)
+
+## UML Diagram
+![](/Assets/q52_uml.png)
