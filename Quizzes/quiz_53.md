@@ -30,3 +30,4 @@ print(palindrome2.get_pal_list())
 ![](/Assets/q53.png)
 
 ## UML Diagram
+![](/UML/q53.png)

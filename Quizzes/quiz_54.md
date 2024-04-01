@@ -21,5 +21,5 @@ print(rain.pour(34))
 ![](/Assets/q54.png)
 
 ## UML Diagram
-![](/Assets/q54_uml.png)
+![](/UML/q54.png)
 

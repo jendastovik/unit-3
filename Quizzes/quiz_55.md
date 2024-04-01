@@ -31,5 +31,5 @@ print(f"toss at (2, 3): {darts1.toss(2, 3)}")
 ![](/Assets/q55.png)
 
 ## UML Diagram
-![](/Assets/q55_uml.png)
+![](/UML/q55.png)
 

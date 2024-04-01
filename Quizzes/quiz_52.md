@@ -31,4 +31,4 @@ bike.ride()
 ![](/Assets/q52.png)
 
 ## UML Diagram
-![](/Assets/q52_uml.png)
+![](/UML/q52.png)

@@ -51,4 +51,4 @@ print_object_info(aircraft1)
 ![](/Assets/q51.png)
 
 ## UML Diagram
-![](/Assets/q51_uml.png)
+![](/UML/q51.png)
